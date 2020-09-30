@@ -32,7 +32,12 @@ public class Program {
 		System.out.println("-------------------");
 		System.out.println("Seller insert:");
 		System.out.println("Inserted! New id = " + newSeller.getId());
-		
+		System.out.println("-------------------");
+		System.out.println("Seller updated:");
+		seller = sellerDao.findById(1);
+		seller.setName("Bruce Brown");
+		sellerDao.update(seller);
+		System.out.println("Update completed");
 		
 		
 		
