@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import model.dao.DaoFactory;
+import model.dao.DepartmentDao;
 import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
@@ -40,8 +41,17 @@ public class Program {
 		System.out.println("Update completed");
 		System.out.println("-------------------");
 		System.out.println("Seller Deleted:");
-		sellerDao.deleteById(1);
+		/*sellerDao.deleteById(1);*/
 		System.out.println("Seller deleted!");
+		System.out.println("-------------------");
+		System.out.println("-------------------");
+		System.out.println("-------------------");
+		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
+		System.out.println("Department insert:");
+		Department eletric = new Department(7, "Eletric");
+		departmentDao.insert(eletric);
+		
+		
 		
 		
 		
