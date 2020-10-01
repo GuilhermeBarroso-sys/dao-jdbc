@@ -1,5 +1,6 @@
 package application;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -52,8 +53,13 @@ public class Program {
 		/*departmentDao.insert(eletric);
 		eletric.setName("Updated Eletric");
 		departmentDao.update(eletric);
-		departmentDao.deleteById(9);*/
-		departmentDao.findById(1);
+		departmentDao.deleteById(9);
+		departmentDao.findById(1);*/
+		List<Department> listDepartment = new ArrayList<>();
+		listDepartment = departmentDao.findAll();
+		for(Department obj: listDepartment) {
+			System.out.println(obj);
+		}
 		
 		
 		
