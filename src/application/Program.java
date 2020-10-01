@@ -48,8 +48,11 @@ public class Program {
 		System.out.println("-------------------");
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 		System.out.println("Department insert:");
-		Department eletric = new Department(7, "Eletric");
-		departmentDao.insert(eletric);
+		Department eletric = new Department(9, null);
+		/*departmentDao.insert(eletric);
+		eletric.setName("Updated Eletric");
+		departmentDao.update(eletric);*/
+		departmentDao.deleteById(9);
 		
 		
 		
