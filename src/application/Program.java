@@ -51,8 +51,10 @@ public class Program {
 		Department eletric = new Department(9, null);
 		/*departmentDao.insert(eletric);
 		eletric.setName("Updated Eletric");
-		departmentDao.update(eletric);*/
-		departmentDao.deleteById(9);
+		departmentDao.update(eletric);
+		departmentDao.deleteById(9);*/
+		departmentDao.findById(1);
+		
 		
 		
 		
